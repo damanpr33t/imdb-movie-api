@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Hub</title>
+</head>
+<body>
+    <div id="landing">
+        <section>
+            <div class="navbar">
+                <nav class="nav__list">
+                    <figure>
+                        <img id="nav__logo" src="logo.png" alt="">
+                    </figure>
+    
+                    <div class="content__wrapper">
+                        <h1>Browse Movies</h1>
+                        <div class="input-wrap">
+                            <input id="search-bar" type="text" placeholder="Search by title, year, or type" onkeydown="onClick(event)"/>
+                            <button id="input"><i class="fas fa-search"></i>  </button>
+                        </div>
+                    </div>
+    
+                    <ul class="nav__links">
+                        <li><a class="nav__link" href="#">Home</a></li>
+                        <li><a class="nav__link" href="#">Contact</a></li>
+                        <li><a class="nav__link btn__movies" href="#">Movies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+            
+        <main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                      <div class="movie-list hide-movie-list">
+                        <div class="movie">
+                          <div class="movie-card">
+                            <div class="movie-card__container">
+                                <img src="" alt="">
+                                <h3>Movie Name</h3>
+                                <p><b>Year:</b> 2005</p>
+                                <p><b>Type:</b> Movie</p>
+                                <p><b>imdbID:</b> ID</p>                        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-list">
+            <figure>
+                <img id="footer__logo" src="logo.png" alt="">
+            </figure>
+
+            <ul class="footer__links">
+                <li><a class="footer__link" href="#">Home</a></li>
+                <li><a class="footer__link" href="#">Contact</a></li>
+                <li><a class="footer__link" href="#">Movies</a></li>
+            </ul>
+
+            <p>Copyright &copy; Flow Designs 2021</p>
+            <p>All images and trademarks are used for identification purposes only. </p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
