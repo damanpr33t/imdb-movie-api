@@ -9,7 +9,7 @@
 
 :root {
     --white: #fff;
-    --darkRed: #1a0000;
+    --darkRed: #8e4162;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
     font-size: 30px;
     font-weight: 700;
     color: var(--white);
-    text-shadow: 2px 2px var(--darkRed);
+    text-shadow: 1px 1px var(--darkRed);
 }
 
 .btn__movies {
@@ -72,7 +72,7 @@ body {
 
 #landing::after {
     content: "";
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('background.jpg');
+    background: #41393e;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center bottom;

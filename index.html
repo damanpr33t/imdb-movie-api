@@ -8,31 +8,35 @@
     <link rel="stylesheet" href="styles.css">
     <title>Movie Hub</title>
 </head>
-<body>
-    <div id="landing">
-        <section>
-            <div class="navbar">
-                <nav class="nav__list">
-                    <figure>
-                        <img id="nav__logo" src="logo.png" alt="">
-                    </figure>
+<body id="landing">
     
-                    <div class="content__wrapper">
-                        <h1>Browse Movies</h1>
-                        <div class="input-wrap">
-                            <input id="search-bar" type="text" placeholder="Search by title, year, or type" onkeydown="onClick(event)"/>
-                            <button id="input"><i class="fas fa-search"></i>  </button>
-                        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="navbar">
+                        <nav class="nav__list">
+                            <figure>
+                                <img id="nav__logo" src="./assets/Free MOvies.jpg" alt="">
+                            </figure>
+            
+                            <div class="content__wrapper">
+                                <h1>Browse Movies</h1>
+                                <form class="input-wrap">
+                                    <input id="search-bar" type="text" placeholder="Search by title, year, or id" onkeydown="onClick(event)"/>
+                                    <button id="input"><i class="fas fa-search"></i>  </button>
+                                </form>
+                            </div>
+            
+                            <ul class="nav__links">
+                                <li><a class="nav__link" href="#">Home</a></li>
+                                <li><a class="nav__link" href="#">Contact</a></li>
+                                <li><a class="nav__link btn__movies" href="#">Movies</a></li>
+                            </ul>
+                        </nav>
                     </div>
-    
-                    <ul class="nav__links">
-                        <li><a class="nav__link" href="#">Home</a></li>
-                        <li><a class="nav__link" href="#">Contact</a></li>
-                        <li><a class="nav__link btn__movies" href="#">Movies</a></li>
-                    </ul>
-                </nav>
+                </div>
             </div>
-        </section>
+        </header>
             
         <main>
             <section>
@@ -58,7 +62,7 @@
 
         <footer class="footer-list">
             <figure>
-                <img id="footer__logo" src="logo.png" alt="">
+                <img id="footer__logo" src="./assets/Free MOvies.jpg" alt="">
             </figure>
 
             <ul class="footer__links">
@@ -70,8 +74,7 @@
             <p>Copyright &copy; Flow Designs 2021</p>
             <p>All images and trademarks are used for identification purposes only. </p>
         </footer>
-    </div>
 
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

@@ -2,7 +2,9 @@
 // API 1 = http://www.omdbapi.com/?i=tt3896198&apikey=6ff3567a
 // API 2 = http://www.omdbapi.com/?s=${searchTerm}&apikey=${apiKey}
 
-const apiKey = '6ff3567a';
+import { apiKey } from './apiKey'
+
+// const apiKey = '6ff3567a';
 const input = document.querySelector(".input-wrap");
 let search = document.getElementById("search-bar");
 let movieList = document.querySelector(".movie-list");
