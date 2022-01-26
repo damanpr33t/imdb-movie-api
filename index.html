@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,73 +9,105 @@
     <link rel="stylesheet" href="styles.css">
     <title>Movie Hub</title>
 </head>
+
 <body id="landing">
-    
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="navbar">
-                        <nav class="nav__list">
-                            <figure>
-                                <img id="nav__logo" src="./assets/Free MOvies.jpg" alt="">
-                            </figure>
-            
-                            <div class="content__wrapper">
-                                <h1>Browse Movies</h1>
-                                <form class="input-wrap">
-                                    <input id="search-bar" type="text" placeholder="Search by title, year, or id" onkeydown="onClick(event)"/>
-                                    <button id="input"><i class="fas fa-search"></i>  </button>
-                                </form>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="navbar">
+                    <nav class="nav__list">
+                        <!-- logo -->
+                        <figure>
+                            <img id="nav__logo" src="./assets/Free MOvies.jpg" alt="">
+                        </figure>
+                        <!-- End of logo -->
+                        <!-- nav links -->
+                        <ul class="nav__links">
+                            <li><a class="nav__link" href="#">Home</a></li>
+                            <li><a class="nav__link" href="#">Contact</a></li>
+                            <li><a class="nav__link btn__movies" href="#">Movies</a></li>
+                        </ul>
+                        <!-- end of nav links -->
+                    </nav>
+                    <!-- Search container -->
+                    <div class="search__container">
+                        <div class="search__element">
+                            <h1>Browse Movies</h1>
+                            <input class="form__control" id="movie__search--box" type="text"
+                                placeholder="Search Movie Title" onkeyup="findMovies()" onclick="findMovies()" />
+
+                            <div class="search__list" id="search__list">
+                                <!-- <div class="search__list--item">
+                                    <div class="search__item--thumbnail">
+                                        <img src="./assets/image-not-found.png" alt="">
+                                    </div>
+                                    <div class="search__item--info">
+                                        <h3>Gaurdians of the Galaxy Vol. 2</h3>
+                                        <p>2017</p>
+                                    </div>
+                                </div> -->
                             </div>
-            
-                            <ul class="nav__links">
-                                <li><a class="nav__link" href="#">Home</a></li>
-                                <li><a class="nav__link" href="#">Contact</a></li>
-                                <li><a class="nav__link btn__movies" href="#">Movies</a></li>
-                            </ul>
-                        </nav>
+                        </div>
                     </div>
+                    <!-- End of search container -->
                 </div>
             </div>
-        </header>
-            
-        <main>
-            <section>
-                <div class="container">
-                    <div class="row">
-                      <div class="movie-list hide-movie-list">
-                        <div class="movie">
-                          <div class="movie-card">
-                            <div class="movie-card__container">
-                                <img src="" alt="">
-                                <h3>Movie Name</h3>
-                                <p><b>Year:</b> 2005</p>
-                                <p><b>Type:</b> Movie</p>
-                                <p><b>imdbID:</b> ID</p>                        
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- result container -->
+        <div class="wrapper__container">
+            <div class="result__container">
+                <div class="result__grid" id="result__grid">
+                    <!-- movie info -->
+                    <!-- <div class="movie__poster">
+                        <img src="./assets/image-not-found.png" alt="">
                     </div>
+                    <div class="movie__info">
+                        <h3 class="movie__title">
+                            Gaurdians of the Galaxy Vol. 2
+                        </h3>
+                        <ul class="movie__misc--info">
+                            <li class="year">Year: 2017</li>
+                            <li class="rated">Ratings: PG-13</li>
+                            <li class="released">Released: May 05 2017</li>
+                        </ul>
+                        <p class="genre"><b>Genre: </b> Action, Adventure, Comedy</p>
+                        <p class="writer"><b>Writer: </b> James Gunn, Don Abett, Andy, Lanning</p>
+                        <p class="actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class="plot">
+                            <b>Plot: </b>The Gaurdians struggle to keep together as a team while
+                            dealing with their personal familey issues, notably Star-Lord's ecounter 
+                            with his father the ambitious celestial being Ego.
+                         </p>
+                         <p class="language"><b>Language: </b> English</p>
+                         <p class="awards"><b><i class="fas fa-award"></i> </b>Nominated for 1 Oscar</p>
+                    </div> -->
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
+        <!-- end of result container -->
+    </main>
 
-        <footer class="footer-list">
-            <figure>
-                <img id="footer__logo" src="./assets/Free MOvies.jpg" alt="">
-            </figure>
 
-            <ul class="footer__links">
-                <li><a class="footer__link" href="#">Home</a></li>
-                <li><a class="footer__link" href="#">Contact</a></li>
-                <li><a class="footer__link" href="#">Movies</a></li>
-            </ul>
+    <footer class="footer-list">
+        <figure>
+            <img id="footer__logo" src="./assets/Free MOvies.jpg" alt="">
+        </figure>
 
-            <p>Copyright &copy; Flow Designs 2021</p>
-            <p>All images and trademarks are used for identification purposes only. </p>
-        </footer>
+        <ul class="footer__links">
+            <li><a class="footer__link" href="#">Home</a></li>
+            <li><a class="footer__link" href="#">Contact</a></li>
+            <li><a class="footer__link" href="#">Movies</a></li>
+        </ul>
 
-    <script src="index.js" type="module"></script>
+        <p>Copyright &copy; Flow Designs 2021</p>
+        <p>All images and trademarks are used for identification purposes only. </p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
